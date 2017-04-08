@@ -8,7 +8,7 @@ We needed to calculate F.K. scores in Ruby.
 
 There's a similar gem named [Odyssey](https://github.com/cameronsutter/odyssey), which provides some additional formulae too. However, that codebase is a bit larger and slower.
 
-[flesch_kincaid](/) is more than 2x faster (see the [benchmark](benchmarks/odyssey.rb))
+[flesch_kincaid](https://github.com/KatanaCode/flesch_kincaid) is more than 2x faster (see the [benchmark](benchmarks/odyssey.rb))
 
 If you just need standard Flesch Kincaid scores, this gem should do the trick.
 
@@ -38,10 +38,12 @@ Or install it yourself as:
 
 ## Usage
 
-    @result = FleschKincaid.read("I can't explain myself, I'm afraid, sir' said Alice, 'because I'm not myself, you see.")
-    @result.score # => 75.77
-    @result.grade # => "7th grade"
-    @result.notes # => "Fairly easy to read."
+``` ruby
+@result = FleschKincaid.read("I can't explain myself, I'm afraid, sir' said Alice, 'because I'm not myself, you see.")
+@result.score # => 75.77
+@result.grade # => "7th grade"
+@result.notes # => "Fairly easy to read."
+```
 
 ## Development
 
